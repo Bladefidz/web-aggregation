@@ -1,0 +1,42 @@
+{
+  "name": "scrape-query",
+  "version": "0.0.1",
+  "description": "A scrapping tool based on query language. So, you can implement web scrapping algorithm more intuitively.",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bladefidz/scrape-query.git"
+  },
+  "keywords": [
+    "scrape",
+    "query",
+    "tool",
+    "base",
+    "language",
+    "web",
+    "algorithm",
+    "intuitively"
+  ],
+  "author": "stupid",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Bladefidz/scrape-query/issues"
+  },
+  "homepage": "https://github.com/Bladefidz/scrape-query#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "json-query": "^2.2.2",
+    "jsonfile": "^3.0.1",
+    "jsonframe-cheerio": "^3.0.1",
+    "request": "^2.81.0",
+    "sort-json-array": "^0.1.7",
+    "winston": "^2.3.1"
+  }
+}
