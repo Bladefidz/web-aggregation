@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name" : "search_tokopedia",
+        "url": "https://ace.tokopedia.com/search/v1/product",
+        "headers": {
+            "Host": "ace.tokopedia.com",
+            "Accept": "application/json",
+            "Connection": "keep-alive",
+            "Upgrade-Insecure-Requests": "1"
+        },
+        "method": "GET",
+        "qs": {
+            "st": "product",
+            "q": "sepatu",
+            "unique_id": ">Random.alphanumeric 30",
+            "rows": 200,
+            "ob": 3,
+            "start": 0,
+            "full_domain": "www.tokopedia.com",
+            "fshop": 1,
+            "page": 1,
+            "scheme": "https",
+            "device": "desktop",
+            "source": "search",
+            "callback": ""
+        },
+        "selector": {
+            "seller": ">Json.data[shop]|distinct id"
+        },
+        "gzip": true
+    },
+    {
+        "id": 2,
+        "name" : "get_tokopedia_seller_info",
+        "url": "https://www.tokopedia.com/sepatufmbogor/info",
+        "headers": {
+            "Host": "www.tokopedia.com",
+            "Accept": "text/html,application/xhtml+xm…plication/xml;q=0.9,*/*;q=0.8",
+            "Accept-Language": "en-US,en;q=0.5",
+            "Referer": "https://www.tokopedia.com/sepatufmbogor"
+        },
+        "method": "GET",
+        "selector": {
+            "shop_info": ">Html.body.'div.shop-header .inline"
+        },
+        "gzip": true
+    },
+    {
+        "id": 3,
+        "name" : "search_tempo",
+        "url": "http://search.tempo.co/index.php/search/result",
+        "headers": {
+            "Host": "search.tempo.co",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            "Accept-Language": "en-US,en;q=0.5",
+            "Referer": "https://search.tempo.co/index.php/search/result/?type=semua&fld=news&vSearch=teror",
+            "Connection": "keep-alive",
+            "Upgrade-Insecure-Requests": 1
+        },
+        "method": "GET",
+        "qs": {
+            "type": "semua",
+            "fld": "news",
+            "vSearch": "teror"
+        },
+        "selector": {
+            "data": ">Html",
+        },
+        "gzip": true
+    }
+]
