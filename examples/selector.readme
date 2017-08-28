@@ -23,7 +23,9 @@ Command (string)
                 This command follow 'json-query' module (https://www.npmjs.com/package/json-query).
 
             HTML Keys
-                Format: >Html./
+                Format: >Html./query/
+
+                This command follow 'jsonframe-cheerio' module  [jsonframe-cheerio](https://github.com/gahabeen/jsonframe-cheerio
 
     Post processor
         Sort
