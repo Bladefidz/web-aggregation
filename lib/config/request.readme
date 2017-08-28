@@ -1,0 +1,27 @@
+## Request configuration guide
+This configuration scheme implemented request module options
+(https://github.com/request/request#requestoptions-callback) configuration.
+Caution: Please use word warp for better reading
+
+headers (JSON)
+    Request header send to target domain.
+
+timeout (Integer)
+    integer containing the number of milliseconds to wait for a server to send response headers (and start the response body) before aborting the request. Note that if the underlying TCP connection cannot be established, the OS-wide TCP connection timeout will overrule the timeout option (the default in Linux can be anywhere from 20-120 seconds).
+
+jar (boolean)
+    If true, remember cookies for future use (or define your custom cookie jar; see examples section)
+
+
+followRedirect (boolean)
+    follow HTTP 3xx responses as redirects (default: true). This property can also be implemented as function which gets response object as a single argument and should return true if redirects should continue or false otherwise.
+
+followAllRedirects (boolean)
+    follow non-GET HTTP 3xx responses as redirects (default: false)
+
+followOriginalHttpMethod (boolean)
+    by default we redirect to HTTP method GET. you can enable this property to redirect to the original HTTP method (default: false)
+
+maxRedirects (Integer)
+    the maximum number of redirects to follow (default: 10)
+    removeRefererHeader - removes the referer header when a redirect happens (default: false). Note: if true, referer header set in the initial request is preserved during redirect chain.

@@ -1,0 +1,4 @@
+level (string)
+    Allowed: DEBUG, INFO, WARNING, ERROR, CRITICAL or NOTSET
+
+    NOTSET will show all log output (use for development only)
