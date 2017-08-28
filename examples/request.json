@@ -42,7 +42,9 @@
         },
         "method": "GET",
         "selector": {
-            "shop_info": ">Html.body.'div.shop-header .inline"
+            "info": ">Html.body.div.shop-header .inline",
+            "info1": ">Html.body.div.shop-header .span10 .row-fluid .span6 .inline",
+            "info3": ">Html.body.section.tab-content-shop div.container.relative .row-fluid .shop-info-wrapper"
         },
         "gzip": true
     },
