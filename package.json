@@ -32,11 +32,15 @@
   "homepage": "https://github.com/Bladefidz/scrape-query#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
+    "clui": "^0.3.6",
+    "csv-db": "^0.2.0",
     "json-query": "^2.2.2",
     "jsonfile": "^3.0.1",
     "jsonframe-cheerio": "^3.0.1",
-    "request": "^2.81.0",
+    "kue": "^0.11.6",
+    "lowdb": "^1.0.0",
+    "request": "^2.83.0",
     "sort-json-array": "^0.1.7",
-    "winston": "^2.3.1"
+    "winston": "^2.4.0"
   }
 }

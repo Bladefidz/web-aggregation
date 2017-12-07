@@ -1,0 +1,19 @@
+{
+    "bookabach":
+    {
+        "baseUrl": "https://www.bookabach.co.nz/baches-and-holiday-homes/search/locale",
+        "fillable": ["uri"],
+        "headers": {
+            "Host": "www.bookabach.co.nz",
+            "Accept": "text/html",
+            "Referer": "https://www.bookabach.co.nz"
+        },
+        "method": "GET",
+        "gzip": true,
+        "pagination": ">url/page/",
+        "selector": {
+            "locs": ">Html.body.[#js-header #locale-nav-container [itemprop=title]]",
+            "items": ">Html.body.[#listings-container #js-listings-panel .col-sm-12]"
+        }
+    }
+}

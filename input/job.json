@@ -1,0 +1,32 @@
+{
+	"bookabach1": {
+		"keywords": {
+			"type": "file",
+			"name": "keywords1.txt"
+		},
+		"requests": [
+			"bookabach"
+		],
+		"output": {
+			"type": "csv",
+            "name": "bookabach1.csv",
+            "format": {
+                "country": ">bookabach.loc[0]",
+                "Sublocation 1 (Island)": ">bookabach.loc.[1]",
+                "Sublocation 2 (Region)": ">bookabach.loc[2]",
+                "Sublocation 3 (Sub-Region)": "",
+                "Sublocation 4 (Suburb)": "",
+                "Property ID": "",
+                "Property Name": "",
+                "No. Guests": "",
+                "No. Bedrooms": "",
+                "No. Beds": "",
+                "No. Bathrooms": "",
+                "No. Reviews": "",
+                "Room Rate (NZD)": "",
+                "Property Type": ""
+            }
+		},
+		"status": 1
+	}
+}

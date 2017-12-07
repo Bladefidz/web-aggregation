@@ -1,27 +1,16 @@
 const fs = require('fs');
 const path = require('path');
 const jsonfile = require('jsonfile');
+const output = require('./../lib/modules/output.js');
 const crawler = require('./../lib/main.js');
 
 let jobs = JSON.parse(fs.readFileSync(
-    path.join(__dirname, '..', 'examples', 'request.json'),
+    path.join(__dirname, '..', 'input', 'job.json'),
+    'utf8')
+);
+let requests = JSON.parse(fs.readFileSync(
+    path.join(__dirname, '..', 'input', 'request.json'),
     'utf8')
 );
 
-crawler.scrape(
-    jobs[0],
-    function(error, response, result) {
-        if (!error) {
-            jsonfile.writeFileSync(
-                path.join(__dirname, '..', 'examples', 'result.json'),
-                result,
-                {flag: 'a'},
-                function (err) {
-                    console.error(err)
-                }
-            );
-        } else {
-            console.log(error);
-        }
-    }
-);
+crawler.scrape(jobs, requests);

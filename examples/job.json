@@ -1,0 +1,28 @@
+{
+	"tokopedia1" : {
+		"type": "enum",
+		"enumerator": {
+			"type": "file",
+			"path": "../examples/keyword.txt"
+		},
+		"request": {
+			"search_tokopedia": {
+				"fill": {
+					"qs.st": "product",
+					"qs.q": ">this.enumerator"
+				}
+			}
+		},
+		"output": {
+			"type": "json",
+			"name": "tokopedia1",
+			"format": {
+				"result": ">this.result.all"
+			}
+		},
+		"priority": "normal",
+		"delay": 5000,
+		"thread": 1,
+		"status": 1
+	}
+}

@@ -1,4 +1,4 @@
 {
-    "max_queue": 10,
-    "interval": 500
+    "delay": 5000,
+    "thread": 1
 }

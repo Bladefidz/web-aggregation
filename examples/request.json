@@ -1,7 +1,6 @@
-[
+{
+    "search_tokopedia":
     {
-        "id": 1,
-        "name" : "search_tokopedia",
         "url": "https://ace.tokopedia.com/search/v1/product",
         "headers": {
             "Host": "ace.tokopedia.com",
@@ -9,10 +8,9 @@
             "Connection": "keep-alive",
             "Upgrade-Insecure-Requests": "1"
         },
+        "fillable": ["qs.st", "qs.q"],
         "method": "GET",
         "qs": {
-            "st": "product",
-            "q": "sepatu",
             "unique_id": ">Random.alphanumeric 30",
             "rows": 200,
             "ob": 3,
@@ -30,9 +28,8 @@
         },
         "gzip": true
     },
+    "tokopedia_seller":
     {
-        "id": 2,
-        "name" : "get_tokopedia_seller_info",
         "url": "https://www.tokopedia.com/sepatufmbogor/info",
         "headers": {
             "Host": "www.tokopedia.com",
@@ -48,9 +45,8 @@
         },
         "gzip": true
     },
+    "search_tempo":
     {
-        "id": 3,
-        "name" : "search_tempo",
         "url": "http://search.tempo.co/index.php/search/result",
         "headers": {
             "Host": "search.tempo.co",
@@ -61,14 +57,15 @@
             "Upgrade-Insecure-Requests": 1
         },
         "method": "GET",
+        "fillable": ["qs.type", "qs.fld", "qs.vSearch"],
         "qs": {
             "type": "semua",
             "fld": "news",
             "vSearch": "teror"
         },
         "selector": {
-            "data": ">Html",
+            "data": ">Html"
         },
         "gzip": true
     }
-]
+}
