@@ -13,13 +13,6 @@
 				}
 			}
 		},
-		"output": {
-			"type": "json",
-			"name": "tokopedia1",
-			"format": {
-				"result": ">this.result.all"
-			}
-		},
 		"priority": "normal",
 		"delay": 5000,
 		"thread": 1,
