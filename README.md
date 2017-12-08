@@ -2,8 +2,8 @@
 Extend JSON capability as preprocessing and post processing request command.
 
 ## Examples
-* Go to [**example directory**](tree/master/examples) for working JSON example.
-* Go to [**test directory**](tree/master/test) for working script example.
+* Go to [**example directory**](examples) for working JSON example.
+* Go to [**test directory**](test) for working script example.
 
 ## Libraries
 * [jsonframe-cheerio](https://github.com/gahabeen/jsonframe-cheerio).
@@ -13,4 +13,4 @@ Extend JSON capability as preprocessing and post processing request command.
 * [csv-db](https://github.com/sspringer82/nodeCsvDb)
 
 ## Kue dashboard
-node_modules/kue/bin/kue-dashboard -p 3050 -r redis://127.0.0.1:6379 -q prefix
+node_modules/kue/bin/kue-dashboard - p 3050 - r redis: //127.0.0.1:3000

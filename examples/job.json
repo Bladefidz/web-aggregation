@@ -5,12 +5,60 @@
 			"type": "file",
 			"path": "../examples/keyword.txt"
 		},
-		"request": {
-			"search_tokopedia": {
-				"fill": {
-					"qs.st": "product",
-					"qs.q": ">this.enumerator"
+		"request": [
+			{
+				"search_tokopedia": {
+					"fill": {
+						"qs.st": "product",
+						"qs.q": ">enumerator"
+					}
 				}
+			}
+		],
+		"output": {
+			"type": "json",
+			"name": "tokopedia1",
+			"format": {
+				"keyword": ">enumerator",
+				"request": ">request",
+				"result": ">result"
+			}
+		},
+		"priority": "normal",
+		"delay": 5000,
+		"thread": 1,
+		"status": 0
+	},
+	"tokopedia2" : {
+		"type": "enum",
+		"enumerator": {
+			"type": "file",
+			"path": "../examples/keyword.txt"
+		},
+		"request": [
+			{
+				"search_tokopedia": {
+					"fill": {
+						"qs.st": "product",
+						"qs.q": ">enumerator"
+					}
+				}
+			}
+		],
+		"output": {
+			"type": "csv",
+			"name": "tokopedia2",
+			"iterate": ">result.seller",
+			"format": {
+				"keyword": ">enumerator",
+				"request": ">request",
+				"id": ">result.seller.[].id",
+				"name": ">result.seller.[].name",
+				"uri": ">result.seller.[].uri",
+				"is_gold": ">result.seller.[].is_gold",
+				"rating": ">result.seller.[].rating",
+				"location": ">result.seller.[].location",
+				"city": ">result.seller.[].city"
 			}
 		},
 		"priority": "normal",

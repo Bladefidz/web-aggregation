@@ -11,9 +11,9 @@
 			"type": "csv",
             "name": "bookabach1.csv",
             "format": {
-                "country": ">bookabach.loc[0]",
-                "Sublocation 1 (Island)": ">bookabach.loc.[1]",
-                "Sublocation 2 (Region)": ">bookabach.loc[2]",
+                "country": ">result.loc1",
+                "Sublocation 1 (Island)": ">result.loc2",
+                "Sublocation 2 (Region)": ">result.loc3",
                 "Sublocation 3 (Sub-Region)": "",
                 "Sublocation 4 (Suburb)": "",
                 "Property ID": "",
