@@ -39,6 +39,7 @@
     "jsonframe-cheerio": "^3.0.1",
     "kue": "^0.11.6",
     "lowdb": "^1.0.0",
+    "mongodb": "^3.0.0-rc0",
     "request": "^2.83.0",
     "sort-json-array": "^0.1.7",
     "winston": "^2.4.0"

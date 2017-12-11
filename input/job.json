@@ -1,32 +1,23 @@
 {
-	"bookabach1": {
-		"keywords": {
-			"type": "file",
-			"name": "keywords1.txt"
+	"dre_ca_gov": {
+        "type": "enum",
+		"enumerator": {
+			"type": "digit",
+            "length": 8,
+            "default": 0,
+			"from": "100000",
+            "to": "100010"
 		},
-		"requests": [
-			"bookabach"
+		"request": [
+			{
+				"dre_ca_gov": {
+					"fill": {
+						"qs.License_id": ">enumerator"
+					}
+				}
+			}
 		],
-		"output": {
-			"type": "csv",
-            "name": "bookabach1.csv",
-            "format": {
-                "country": ">result.loc1",
-                "Sublocation 1 (Island)": ">result.loc2",
-                "Sublocation 2 (Region)": ">result.loc3",
-                "Sublocation 3 (Sub-Region)": "",
-                "Sublocation 4 (Suburb)": "",
-                "Property ID": "",
-                "Property Name": "",
-                "No. Guests": "",
-                "No. Bedrooms": "",
-                "No. Beds": "",
-                "No. Bathrooms": "",
-                "No. Reviews": "",
-                "Room Rate (NZD)": "",
-                "Property Type": ""
-            }
-		},
-		"status": 1
+		"status": 1,
+		"cache": 1
 	}
 }

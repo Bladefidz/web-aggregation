@@ -1,9 +1,9 @@
 {
-	"tokopedia1" : {
+	"tpd_shoes" : {
 		"type": "enum",
 		"enumerator": {
 			"type": "file",
-			"path": "../examples/keyword.txt"
+			"path": "../examples/shoes.txt"
 		},
 		"request": [
 			{
@@ -17,7 +17,7 @@
 		],
 		"output": {
 			"type": "json",
-			"name": "tokopedia1",
+			"name": "tpd_shoes",
 			"format": {
 				"keyword": ">enumerator",
 				"request": ">request",
@@ -27,13 +27,13 @@
 		"priority": "normal",
 		"delay": 5000,
 		"thread": 1,
-		"status": 0
+		"status": 1
 	},
-	"tokopedia2" : {
+	"tpd_pants" : {
 		"type": "enum",
 		"enumerator": {
 			"type": "file",
-			"path": "../examples/keyword.txt"
+			"path": "../examples/pants.txt"
 		},
 		"request": [
 			{
@@ -47,8 +47,7 @@
 		],
 		"output": {
 			"type": "csv",
-			"name": "tokopedia2",
-			"iterate": ">result.seller",
+			"name": "tpd_pants",
 			"format": {
 				"keyword": ">enumerator",
 				"request": ">request",

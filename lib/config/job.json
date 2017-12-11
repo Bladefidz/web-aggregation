@@ -1,4 +1,5 @@
 {
+	"max_job": 1000,
     "delay": 5000,
     "thread": 1
 }

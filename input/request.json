@@ -10,10 +10,24 @@
         },
         "method": "GET",
         "gzip": true,
-        "pagination": ">url/page/",
+        "crawl": ">url/page/",
         "selector": {
             "locs": ">Html.body.[#js-header #locale-nav-container [itemprop=title]]",
             "items": ">Html.body.[#listings-container #js-listings-panel .col-sm-12]"
         }
+    },
+    "dre_ca_gov":
+    {
+        "url": "http://www2.dre.ca.gov/PublicASP/pplinfo.asp?start=1",
+        "headers": {
+            "Host": "www2.dre.ca.gov",
+            "Accept": "text/html",
+            "Referer": "http://www2.dre.ca.gov/PublicASP/pplinfo.asp",
+            "Origin": "http://www2.dre.ca.gov"
+        },
+        "fillable": ["qs.License_id"],
+        "method": "GET",
+        "qs": {},
+        "gzip": true
     }
 }

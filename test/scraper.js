@@ -1,8 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const jsonfile = require('jsonfile');
-const output = require('./../lib/modules/output.js');
-const crawler = require('./../lib/main.js');
+const scraper = require('./../lib/main.js');
 
 let jobs = JSON.parse(fs.readFileSync(
     path.join(__dirname, '..', 'input', 'job.json'),
@@ -13,4 +11,4 @@ let requests = JSON.parse(fs.readFileSync(
     'utf8')
 );
 
-crawler.scrape(jobs, requests);
+scraper.scrape(jobs, requests);
