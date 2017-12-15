@@ -15,6 +15,7 @@
 				}
 			}
 		],
+		"cache": 1,
 		"output": {
 			"type": "json",
 			"name": "tpd_shoes",
@@ -27,7 +28,7 @@
 		"priority": "normal",
 		"delay": 5000,
 		"thread": 1,
-		"status": 1
+		"status": 0
 	},
 	"tpd_pants" : {
 		"type": "enum",
@@ -45,6 +46,7 @@
 				}
 			}
 		],
+		"cache": 1,
 		"output": {
 			"type": "csv",
 			"name": "tpd_pants",

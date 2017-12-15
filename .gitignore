@@ -58,4 +58,4 @@ typings/
 .env
 
 # Private directory
-output/cache/
+cache/*
