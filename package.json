@@ -1,5 +1,5 @@
 {
-  "name": "scrape-query",
+  "name": "web-aggregation",
   "version": "0.0.1",
   "description": "A scrapping tool based on query language. So, you can implement web scrapping algorithm more intuitively.",
   "main": "index.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Bladefidz/scrape-query.git"
+    "url": "git+https://github.com/Bladefidz/web-aggregation.git"
   },
   "keywords": [
     "scrape",
@@ -27,9 +27,9 @@
   "author": "stupid",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Bladefidz/scrape-query/issues"
+    "url": "https://github.com/Bladefidz/web-aggregation/issues"
   },
-  "homepage": "https://github.com/Bladefidz/scrape-query#readme",
+  "homepage": "https://github.com/Bladefidz/web-aggregation#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "clui": "^0.3.6",
