@@ -5,6 +5,8 @@
 "id" : <request data>
 ```
 
+**NOTICE!**
+`>` is a command, please read [command documentation](command.md)
 
 ### input (object)
 
@@ -54,4 +56,4 @@ Query string that will be parsed into request URL via GET request.
 
 
 ### selector (object)
-*see selector.readme
+please read [selector documentation](selector.md)

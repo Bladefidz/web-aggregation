@@ -6,7 +6,7 @@ This framework need `request_template` and `job` meta data to be passed to highe
 ![schema](img/schema.png)
 
 Lets describe each competent one by one:
-- **request_template** describe web scrapping logic. You can put many websites as you want differentiate with `id`.
+- **request_template** describe web scrapping logic. You can put many websites as you want differentiate by `id`.
 - **job** describe web scraping execution. You can create many jobs as you want differentiate by `id`. Each job may execute multiple `request id` defined in `request_template` by stored them into `request` field as array.
 - **API Client** describe which `job` should be executed by `lib/main.js`.
 - **scrape()** is a highest level API defined by `lib/main.js` which maintain all web request objects.
