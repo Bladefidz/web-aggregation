@@ -43,6 +43,7 @@
     "npm": "^6.0.1",
     "request": "^2.86.0",
     "sort-json-array": "^0.1.7",
-    "winston": "^2.4.0"
+    "winston": "^2.4.0",
+    "moment": "2.19.3"
   }
 }
